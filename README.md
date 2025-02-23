@@ -1,6 +1,6 @@
 # Command line:  
-*Compile: make all
-*Run: make play
+###Compile: make all
+###Run: make play
 
 
 
