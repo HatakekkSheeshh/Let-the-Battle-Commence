@@ -22,7 +22,7 @@ public abstract class Testcase {
     protected void setTestResult(double actual, double expected) {
         this.actualOutput = actual;
         this.expectedOutput = expected;
-        this.isPassed = Math.abs(actual - expected) < 0.001; // So sánh số thực với độ chính xác 0.001
+        this.isPassed = Math.abs(actual - expected) < 0.001;
     }
     protected int getTestId() {
         return testId;
