@@ -217,21 +217,21 @@ class PaladinTest extends Testcase {
         Battle.GROUND = random.nextInt(MAX_V) + 1;
         Paladin paladin = new Paladin(500, 4);
         double score = paladin.getCombatScore();
-        setTestResult(score, 1500.0); // 3 * HP vì không phải số Fibonacci
+        setTestResult(score, 1500.0);
     }
     
     private void testSmallFiboHP() {
         Battle.GROUND = random.nextInt(MAX_V) + 1;
-        Paladin paladin = new Paladin(2, 4); // 2 là số Fibonacci thứ 3
+        Paladin paladin = new Paladin(2, 4); 
         double score = paladin.getCombatScore();
         setTestResult(score, 1003.0); // 1000 + 3
     }
     
     private void testLargeFiboHP() {
         Battle.GROUND = random.nextInt(MAX_V) + 1;
-        Paladin paladin = new Paladin(21, 4); // 21 là số Fibonacci thứ 8
+        Paladin paladin = new Paladin(21, 4); 
         double score = paladin.getCombatScore();
-        setTestResult(score, 1008.0); // 1000 + 8 vì là số Fibonacci thứ 8
+        setTestResult(score, 1008.0);
     }
 
     private void testVeryLargeFiboHP() {
