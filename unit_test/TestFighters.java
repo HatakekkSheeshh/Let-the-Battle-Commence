@@ -132,13 +132,14 @@ class WarriorTest extends Testcase {
     }
     
     private void testPrimeGround() {
-        Battle.GROUND = generatePrimeNumber(1, MAX_V);; 
+        Battle.GROUND = generatePrimeNumber(1, MAX_V);
         Warrior warrior = new Warrior(500, 4);
         double score = warrior.getCombatScore();
         setTestResult(score, 999.0); 
     }
     
     private void testWPOne() {
+        Battle.GROUND = random.nextInt(MAX_V) + 1;
         Warrior warrior = new Warrior(500, 1);
         double score = warrior.getCombatScore();
         if(Utility.isPrime(Battle.GROUND)){
